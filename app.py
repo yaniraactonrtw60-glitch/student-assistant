@@ -46,7 +46,7 @@ if user_prompt := st.chat_input("سوال یا درخواست خود را بنو
         with st.spinner("در حال تحلیل و جستجو در کتابخانه..."):
             try:
                 response = client.models.generate_content(
-                    model='gemini-2.0-flash',
+                    model='gemini-1.5-flash',
                     contents=user_prompt,
                     config={
                         'system_instruction': system_instruction,
