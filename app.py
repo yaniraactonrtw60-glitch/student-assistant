@@ -60,7 +60,7 @@ if prompt := st.chat_input("سوال خود را بنویسید..."):
             ] + st.session_state.messages
 
             response = client.chat.completions.create(
-                model="meta-llama/llama-3.1-8b-instruct:free",
+                model="google/gemini-2.0-flash-exp:free",
                 messages=messages_payload,
             )
 
